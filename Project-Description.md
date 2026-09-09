@@ -42,6 +42,6 @@
 
 **Github:** [https://github.com/munozsophia](https://github.com/munozsophia)
 
-[Personal Bio](munoz-bio.md)
+[Personal Bio](/bios/munoz-bio.md)
 
 ## Project Topic
