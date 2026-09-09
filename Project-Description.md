@@ -1,6 +1,6 @@
 # Project Description
 
-## Team Name
+## Team: AVJS
 
 ## Team Members
 
