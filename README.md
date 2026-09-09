@@ -1,3 +1,3 @@
 # CS5001---Senior-Design-Project
 
-**Project Description**: [About the project](Project-Description.md)
+**About the Project**: [Project Description](Project-Description.md)
