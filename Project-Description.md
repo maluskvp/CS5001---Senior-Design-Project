@@ -45,3 +45,5 @@
 [Personal Bio](/bios/munoz-bio.md)
 
 ## Project Topic
+
+Reading Aids for Children or AI/XR. Meeting with professors to decide.
