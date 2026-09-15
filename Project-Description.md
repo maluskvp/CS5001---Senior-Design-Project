@@ -12,6 +12,8 @@
 
 **Github:** [https://github.com/abkatchill](https://github.com/abkatchill)
 
+[Personal Bio](/bios/kraft-bio.md)
+
 ---
 
 **Name:** Veronica Malusky
