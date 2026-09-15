@@ -24,6 +24,8 @@
 
 **Github:** [https://github.com/maluskvp](https://github.com/maluskvp)
 
+[Personal Bio](/bios/malusky_bio.md)
+
 ---
 
 **Name:** Jake Martin
