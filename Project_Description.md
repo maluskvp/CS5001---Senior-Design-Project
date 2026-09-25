@@ -52,4 +52,5 @@
 
 Develop a AI automated WebGL and data visualization tool to allow for representation of volumetric data
 
-[Constraints Essay](Constraints-Essay.md)
+[Constraints Essay](Constraints_Essay.md)
+[User Stories](User_Stories.md)
