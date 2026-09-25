@@ -50,4 +50,6 @@
 
 ## Project Topic
 
-Reading Aids for Children or AI/XR. Meeting with professors to decide.
+Develop a AI automated WebGL and data visualization tool to allow for representation of volumetric data
+
+[Constraints Essay](Constraints-Essay.md)
