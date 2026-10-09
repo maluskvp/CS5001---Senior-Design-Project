@@ -67,8 +67,8 @@ Architecture: **client-server** for login, storage, and the switcher; a **pipeli
 | Document | Week | Status |
 |---|---|---|
 | [D0 – High-Level Design](Design_Diagrams/D0_High_Level_Design.pdf) | 5 | ✅ Submitted |
-| D1 – Detailed Design, Part 1 (data model, algorithms, API, tech choices) | 6 | 🛠 In progress |
-| D2 – Detailed Design, Part 2 | 7 | ⏳ Upcoming |
+| [D1 – Detailed Design, Part 1](Design_Diagrams/D1_Detailed_Design.pdf) | 6 | ✅ Submitted |
+| D2 – Detailed Design, Part 2 | 7 | 🛠 In Progress |
 
 D1 and D2 will be added to `Design_Diagrams/` next to D0, along with their diagram source files.
 
