@@ -93,7 +93,7 @@ These choices are still being finalized in D1.
 - [x] Project selection and constraints essay
 - [x] User stories and use cases
 - [x] D0 – High-level architecture
-- [ ] D1 – Detailed design, part 1
+- [x] D1 – Detailed design, part 1
 - [ ] D2 – Detailed design, part 2
 - [ ] Project plan and task assignments
 - [ ] Technical specification
