@@ -1,56 +1,84 @@
-# Project Description
+<div align="center">
 
-## Team: AVJS
+# Web-Based Interactive Model Visualizer
 
-## Team Members
+**Team AVJS** · CS 5001 / 5002 Senior Design · University of Cincinnati
 
-**Name:** Abby Kraft
+*Create a web-based model visualizer that allows users to quickly change layers of the model as well as create models based on images uploaded via AI.*
 
-**Major:** Computer Science
+**Advisor:** Professor Ming Tang
 
-**Email:** [mailto:kraftab@mail.uc.edu](kraftab@mail.uc.edu)
-
-**Github:** [https://github.com/abkatchill](https://github.com/abkatchill)
-
-[Personal Bio](/bios/kraft-bio.md)
+</div>
 
 ---
 
-**Name:** Veronica Malusky
+## 👥 Team Members
 
-**Major:** Computer Science
-
-**Email:** [mailto:maluskvp@mail.uc.edu](maluskvp@mail.uc.edu)
-
-**Github:** [https://github.com/maluskvp](https://github.com/maluskvp)
-
-[Personal Bio](/bios/malusky_bio.md)
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="https://github.com/abkatchill.png" width="90" alt="Abby Kraft"><br>
+      <b>Abby Kraft</b><br>
+      Computer Science<br>
+      <i>Image Upload</i><br><br>
+      <a href="mailto:kraftab@mail.uc.edu">Email</a> ·
+      <a href="https://github.com/abkatchill">GitHub</a> ·
+      <a href="bios/kraft-bio.md">Bio</a>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://github.com/maluskvp.png" width="90" alt="Veronica Malusky"><br>
+      <b>Veronica Malusky</b><br>
+      Computer Science<br>
+      <i>Login / Sign-up</i><br><br>
+      <a href="mailto:maluskvp@mail.uc.edu">Email</a> ·
+      <a href="https://github.com/maluskvp">GitHub</a> ·
+      <a href="bios/malusky_bio.md">Bio</a>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://github.com/jakeMartin614.png" width="90" alt="Jake Martin"><br>
+      <b>Jake Martin</b><br>
+      Computer Science<br>
+      <i>3D Model Switcher</i><br><br>
+      <a href="mailto:marti8j5@mail.uc.edu">Email</a> ·
+      <a href="https://github.com/jakeMartin614">GitHub</a>
+    </td>
+    <td align="center" width="25%">
+      <img src="https://github.com/munozsophia.png" width="90" alt="Sophia Munoz"><br>
+      <b>Sophia Munoz</b><br>
+      Computer Science<br>
+      <i>3D Model Viewer</i><br><br>
+      <a href="mailto:munozsa@mail.uc.edu">Email</a> ·
+      <a href="https://github.com/munozsophia">GitHub</a> ·
+      <a href="bios/munoz-bio.md">Bio</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
-**Name:** Jake Martin
+## 🧊 Project Topic
 
-**Major:** Computer Science
+> Develop an AI-automated WebGL and data visualization tool to allow for the representation of volumetric data.
 
-**Email:** [mailto:marti8j5@mail.uc.edu](marti8j5@mail.uc.edu)
+Users upload an image, an AI service turns it into a 3D model, and the model is saved to their account. They can then open any saved model in the browser to rotate, zoom, and switch between its layers.
 
-**Github:** [https://github.com/jakeMartin614](https://github.com/jakeMartin614)
+| Who it helps | What they can explore |
+|---|---|
+| 🧠 Medical students | Cross-sections of the human brain |
+| ⚙️ Mechanical engineers | A car's transmission and powertrain |
+| 🪨 Geologists | Rock types, sediment layers, and structural boundaries |
+| 🚒 Emergency responders | Building floors and hidden rooms before a search |
+| 🦯 Low-vision users | Model details as text, through keyboard and screen reader |
 
 ---
 
-**Name:** Sophia Munoz
+## 📄 Project Documents
 
-**Major:** Computer Science
-
-**Email:** [mailto:munozsa@mail.uc.edu](munozsa@mail.uc.edu)
-
-**Github:** [https://github.com/munozsophia](https://github.com/munozsophia)
-
-[Personal Bio](/bios/munoz-bio.md)
-
-## Project Topic
-
-Develop a AI automated WebGL and data visualization tool to allow for representation of volumetric data
-
-[Constraints Essay](Constraints_Essay.md)
-[User Stories](User_Stories.md)
+| Document | Description |
+|---|---|
+| [Constraints Essay](Constraints_Essay.md) | Economic, social, and professional constraints |
+| [User Stories](User_Stories.md) | Stakeholders, user stories US-01 to US-05, use case UC-01 |
+| [D0 – High-Level Design](Design_Diagrams/D0_High_Level_Design.pdf) | Components, interfaces, data flow, architecture |
+| [D1 – Detailed Design, Part 1](Design_Diagrams/D1_Detailed_Design.pdf) | Data model, algorithms, API, technology choices |
+| [D2 – Detailed Design, Part 2](Design_Diagrams/D2_Detailed_Design.pdf) | Remaining components, edge cases, traceability |
+| [Peer Review Notes](Design_Diagrams/Peer_Review_Notes.md) | Peer design review feedback and action items |

@@ -1,105 +1,108 @@
-# Assignment 4 - User Stories and Use Cases
-## Stakeholder Map
-Primary: Those who are opening and using themselves.
-- Medical Student
-- Mechanical Engineer
-- Geologist
-- Emergency Response Team Member
+<div align="center">
 
-Secondary: People affected by the system without using it directly.
-- Instructor / Professor
-- Data Provider
+# User Stories and Use Cases
 
-Hidden: Accessibility needs or downstream teams, those concerns heard about after deployed that are easy to miss.
-- Low-vision / screen-reader user
-- Downstream tools or systems
+**Team AVJS** · Web-Based Interactive Model Visualizer · Assignment 4
 
-## User stories
+</div>
 
-US-01 - Veronica Malusky:
-- stakeholder category: Medical Student
+---
 
-As a medical student I want to be able to have a 3D model of the human brain and view the bisectional of the brain so that I can view an accurate model and volumetric model to use for my studies.
+## 🗺️ Stakeholder Map
 
-INVEST: The Medical student is indepent from other Stakeholder, what they get out of it is negotiable in terms of it could be actual patient models or pre made examples, This is of course a vauable tool for diagnosing and learing, This is also a small part of what the app should be able to do. Of course, it will be testable for if this can work. There are also no listed UI elements.
+| Type | Who | Stakeholders |
+|---|---|---|
+| **Primary** | People who open and use the system themselves | Medical student · Mechanical engineer · Geologist · Emergency response team member |
+| **Secondary** | People affected by the system without using it directly | Instructor / professor · Data provider |
+| **Hidden** | Accessibility needs or downstream teams; concerns that are easy to miss and often only heard about after deployment | Low-vision / screen-reader user · Downstream tools or systems |
 
-US-02 - Sophia Munoz:
-- stakeholder category: Mechanical Engineer
+---
 
-As a mechanical engineer at an automotive company, I want to be able to access a 3D model of our car so I can investigate the transmission and powetrain to zero in on a mechanical issue that has appeared.
+## 📖 User Stories
 
-INVEST:The Mechanical Engineer is indepent from other Stakeholder, what they get out of it is negotiable in terms of it could be actual engine models or pre made examples of some basic engines, This is of course a vauable tool for learing about new engines, This is also a small part of what the app should be able to do. Of course, it will be testable for if this can work. There are also no listed UI elements.
+| ID | Stakeholder | Author |
+|---|---|---|
+| [US-01](#us-01--medical-student) | 🧠 Medical student | Veronica Malusky |
+| [US-02](#us-02--mechanical-engineer) | ⚙️ Mechanical engineer | Sophia Munoz |
+| [US-03](#us-03--geologist) | 🪨 Geologist | Abby Kraft |
+| [US-04](#us-04--emergency-response-team-member) | 🚒 Emergency response team member | Jake Martin |
+| [US-05](#us-05--low-vision-or-screen-reader-student) | 🦯 Low-vision or screen-reader student | Abby Kraft |
 
-US-03 - Abby Kraft 
-- stakeholder category: Geologist
+### US-01 · Medical Student
+*Author: Veronica Malusky*
 
-As a geologist I want to be able to have an effective and accessible way to have a 3D model that can express the different layers of rock types, sediments, and structural boundaries. I want this so I can better understand and utilize the model to further my studies and research as well as educating those about geology.
+> As a medical student, I want a 3D model of the human brain and to view a bisection of the brain, so that I have an accurate volumetric model to use for my studies.
 
-INVEST:The Geologist is indepent from other Stakeholder, what they get out of it is negotiable in terms of it could be highly detailed or not very detailed, This is of course a vauable tool for learing about rocks and layers of the earth, This is also a small part of what the app should be able to do. Of course, it will be testable for if this can work and is acurate. There are also no listed UI elements.
+**INVEST:** The medical student is independent from other stakeholders. What they get out of it is negotiable: it could be actual patient models or premade examples. It is a valuable tool for diagnosing and learning, and it is a small part of what the app should be able to do. It will be testable for whether it works. There are no listed UI elements.
 
-US-04 - Jake Martin
-- stakeholder category: Emergency response team member
+### US-02 · Mechanical Engineer
+*Author: Sophia Munoz*
 
-As a member of an emergency response team being able to quickly see a 3d model of a building allows me to quickly grasp how a building should be searched as well as seeing rooms that are not visible from the outside of the building in situations such as an office building fire. 
+> As a mechanical engineer at an automotive company, I want to access a 3D model of our car so I can investigate the transmission and powertrain to zero in on a mechanical issue that has appeared.
 
-INVEST:The Emergency response team member is independent from other Stakeholders, what they get out of it is negotiable in terms of it could be highly detailed or not very detailed IE inculding things like air ducts or not, This is of course a vauable tool for potentailly saving lives durring a search, This is also a small part of what the app should be able to do, of course it will be testable for if this can work and is acurate. There are also no listed UI elements.
+**INVEST:** The mechanical engineer is independent from other stakeholders. What they get out of it is negotiable: it could be actual engine models or premade examples of some basic engines. It is a valuable tool for learning about new engines, and it is a small part of what the app should be able to do. It will be testable for whether it works. There are no listed UI elements.
 
-US-05 - Abby Kraft
-- stakeholder category: Low-vision or Screen-reader Student
+### US-03 · Geologist
+*Author: Abby Kraft*
 
-As a low-vision student who uses a screen reader, I want to be able to get the anatomical or structural information shown in a 3D model as text through a screen reader and through the keyboard, so like my fellow students, I can complete the same coursework independently without needing someone to describe the model to me. 
+> As a geologist, I want an effective and accessible 3D model that can express the different layers of rock types, sediments, and structural boundaries, so I can better understand and use the model to further my studies and research, as well as educate others about geology.
 
-INVEST: The low-vision or screen-reader student is independent from other stakeholders, what is gotten out of it is negotiable in terms of it could be detailed and complex or possibly as simple as a keyboard shortcut. This would be a very valuable tool since a whole group of users can't use the application at all as well as certain accessibility obligations. As for estimable the scope is the same information that a person with normal functionality sight can get from viewing the model so the team can size it. This is still just one task, which will be testable and accurate.
+**INVEST:** The geologist is independent from other stakeholders. What they get out of it is negotiable: it could be highly detailed or not very detailed. It is a valuable tool for learning about rocks and the layers of the earth, and it is a small part of what the app should be able to do. It will be testable for whether it works and is accurate. There are no listed UI elements.
 
-## Use cases
+### US-04 · Emergency Response Team Member
+*Author: Jake Martin*
 
-#### UC-01 - Visualize Volumetric Data
+> As a member of an emergency response team, being able to quickly see a 3D model of a building lets me quickly grasp how the building should be searched, as well as see rooms that are not visible from outside, in situations such as an office building fire.
 
-Primary Actor: User (researcher, medical student, professor, etc.)
+**INVEST:** The emergency response team member is independent from other stakeholders. What they get out of it is negotiable: it could be highly detailed or not very detailed, for example including air ducts or not. It is a valuable tool for potentially saving lives during a search, and it is a small part of what the app should be able to do. It will be testable for whether it works and is accurate. There are no listed UI elements.
 
-Secondary Actors: 
+### US-05 · Low-Vision or Screen-Reader Student
+*Author: Abby Kraft*
 
-- WebGL rendering
-- AI to interpret data and obtain a 3D model
-- Storage system
+> As a low-vision student who uses a screen reader, I want to get the anatomical or structural information shown in a 3D model as text, through a screen reader and the keyboard, so that, like my fellow students, I can complete the same coursework independently without needing someone to describe the model to me.
 
-Hidden 
-Preconditions:
+**INVEST:** The low-vision or screen-reader student is independent from other stakeholders. What they get out of it is negotiable: it could be detailed and complex, or as simple as a keyboard shortcut. It is very valuable, since without it a whole group of users can't use the application at all, and it supports accessibility obligations. It is estimable because the scope is the same information a sighted user gets from viewing the model, so the team can size it. It is still a single task, and it will be testable and accurate.
 
-- User has access to the application
-- WebGL is supported by the users browser and application
-- User has a volumetric model
+---
 
-Main Success Flow:
+## 🔄 Use Cases
 
-1. User writes prompt into AI to get a volumetric model
-2. System interprets users prompt and obtains model for user
-2. User approves the model that gets generated by the AI
-4. System renders model into WebGL into a 3D model
-5. User is able to rotate, zoom in, and move model on screen
-6. User selects bisectional (slice of model) option
-7. System renders the volumetric data to display on the screen to the user
+### UC-01 · Visualize Volumetric Data
 
-Alternate Success Flow:
+| | |
+|---|---|
+| **Primary actor** | User (researcher, medical student, professor, etc.) |
+| **Secondary actors** | WebGL rendering · AI to interpret data and produce a 3D model · Storage system |
 
-1. User uploads volumetric model
-2. System verfies model is valid to be rendered
-3. User selects the model to be rendered in the WebGL
-3. System renders model and displays 3D model
-3. User is able to rotate, zoom in, and move model on screen and highlights sections they want to investigate
-3. System registers selected portion of the model and AI will display information about the highlighted portion of the model
+**Preconditions**
+- The user has access to the application.
+- WebGL is supported by the user's browser and the application.
+- The user has a volumetric model.
 
-Exception Flow:
+#### ✅ Main Success Flow
+1. The user writes a prompt to the AI to get a volumetric model.
+2. The system interprets the user's prompt and obtains a model for the user.
+3. The user approves the model generated by the AI.
+4. The system renders the model in WebGL as a 3D model.
+5. The user can rotate, zoom in, and move the model on screen.
+6. The user selects the bisection (slice of model) option.
+7. The system renders the volumetric data and displays it on screen.
 
-1. User uploads invalid model
-2. System displays error message and rejects the file 
-3. User gets the ability to reupload a valid model that can be rendered in the WebGL
+#### 🔀 Alternate Success Flow
+1. The user uploads a volumetric model.
+2. The system verifies the model is valid to be rendered.
+3. The user selects the model to be rendered in WebGL.
+4. The system renders and displays the 3D model.
+5. The user can rotate, zoom in, and move the model on screen, and highlights sections they want to investigate.
+6. The system registers the selected portion of the model, and the AI displays information about the highlighted portion.
 
-Post Condition:
+#### ⚠️ Exception Flow
+1. The user uploads an invalid model.
+2. The system displays an error message and rejects the file.
+3. The user can re-upload a valid model that can be rendered in WebGL.
 
-Model is able to be rendered successfully and manipulated by the user as desired. AI is able to successfully create a model that is valid for the WebGL, and also display information regarding the model if prompted by the user
+**Postcondition:** The model renders successfully and the user can manipulate it as desired. The AI successfully creates a model that is valid for WebGL, and displays information about the model if the user asks.
 
+---
 
-
-
-_Last updated: 2026-09-28_
+<sub>Last updated 2026-10-14</sub>
