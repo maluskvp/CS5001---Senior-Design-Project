@@ -10,7 +10,7 @@ This project builds an AI-assisted WebGL tool for viewing and exploring volumetr
 
 ## Team
 
-| Member | GitHub | Component owner |
+| Member | GitHub | Component Owner |
 |---|---|---|
 | Abby Kraft | [@abkatchill](https://github.com/abkatchill) | Image Upload |
 | Veronica Malusky | [@maluskvp](https://github.com/maluskvp) | Login / Sign-up |
@@ -60,7 +60,11 @@ Every component now has a data model, defined behavior, an interface with error 
 ├── Project_Description.md     Team members and project topic
 ├── Constraints_Essay.md       Economic, social, and professional constraints
 ├── User_Stories.md            Stakeholder map, user stories US-01 to US-05, use case UC-01
+├── Tasklist.md                20 implementation tasks (T1–T20), each with one owner
+├── Requirements_Document.md   Functional and non-functional requirements, MoSCoW, constraints
+├── Technical_Specification.md Interfaces, technology stack, traceability matrix
 ├── bios/                      Team member professional bios
+├── Planning/                  Milestones, timeline, effort matrix, WBS, and risk register
 └── Design_Diagrams/
     ├── D0_High_Level_Design.pdf    Components, interfaces, data flow, architecture patterns
     ├── D1_Detailed_Design.pdf      Data model, core algorithms, build vs. reuse, API, tech choices
@@ -77,7 +81,39 @@ Every component now has a data model, defined behavior, an interface with error 
 | [D2 – Detailed Design, Part 2](Design_Diagrams/D2_Detailed_Design.pdf) | 7 | ✅ Submitted |
 | [Peer Design Review Notes](Design_Diagrams/Peer_Review_Notes.md) | 7 | ✅ Submitted |
 
-Together with the user stories, D0–D2 make up the Assignment #4 design package. The design phase is now closed; next, each component becomes a task in the project plan.
+Together with the user stories, D0–D2 make up the Assignment #4 design package. The design phase is now closed, and each component has been turned into tasks in the [project plan](#project-plan).
+
+### Planning and specification documents
+
+| Document | Week | Status |
+|---|---|---|
+| [Task List](Tasklist.md) | 8 | ✅ Submitted |
+| [Milestones, Timeline, and Effort Matrix](Planning/) | 8 | ✅ Submitted |
+| [Requirements Document](Requirements_Document.md) | 9 | 🛠 In progress |
+| [Technical Specification](Technical_Specification.md) | 9 | 🛠 In progress |
+
+---
+
+## Project plan
+
+Each member owns five tasks for their component. The full schedule, effort matrix, and risk register are in [`Planning/`](Planning/).
+
+| Tasks | Owner | Component | Implementation window |
+|---|---|---|---|
+| [T1–T5](Tasklist.md) | Abby Kraft | Image Upload | Jan – Mar 2027 |
+| [T6–T10](Tasklist.md) | Veronica Malusky | Login / Sign-up | Jan – Feb 2027 |
+| [T11–T15](Tasklist.md) | Jake Martin | 3D Model Switcher | Jan – Mar 2027 |
+| [T16–T20](Tasklist.md) | Sophia Munoz | 3D Model Viewer | Nov 2026 – Mar 2027 |
+
+**Key dates**
+
+| Date | Milestone |
+|---|---|
+| Fall 2026 | Course deliverables through the Design Report (12/2) and advisor assessments (12/8) |
+| Jan 2027 | Backends, front-end logic, and model loading in place |
+| Feb 2027 | Generation pipeline working; components feature-complete |
+| Mar 2027 | Components tested and integrated end to end |
+| **Apr 13, 2027** | **CEAS Expo** |
 
 ---
 
@@ -102,20 +138,31 @@ Chosen and justified in D1.
 Carried forward from D2 and the peer review:
 
 - How a single uploaded image produces the separate layers the viewer displays.
-- Which AI image-to-3D service to use, and a backup plan if its results are poor.
+- Which AI image-to-3D service to use, and a backup plan if its results are poor (to be decided in task T1, by 1/13/2027).
 - Prompt-based model generation (out of scope for now).
 
 ---
 
 ## Course milestones
 
-- [x] Project selection and constraints essay
-- [x] User stories and use cases
-- [x] D0 – High-level architecture
-- [x] D1 – Detailed design, part 1
-- [x] D2 – Detailed design, part 2
-- [x] Peer Design Review
-- [ ] Project plan and task assignments
-- [ ] Technical specification
-- [ ] Test plan
-- [ ] Oral presentations
+**CS 5001 · Fall 2026 (Define & Design)**
+
+- [x] Professional Biographies
+- [x] Team Formation and Project Description
+- [x] Advisor Selection and Constraints Essay
+- [x] User Stories and Use Cases
+- [x] D0 – High-Level Architecture
+- [x] D1 – Detailed Design, Part 1
+- [x] D2 – Detailed Design, Part 2, and Peer Design Review
+- [x] Task List, Milestones, Timeline, and Effort Matrix
+- [ ] Requirements Document and Technical Specification (10/30)
+- [ ] Test and Validation Plan (11/4)
+- [ ] Ethics and Responsible-Use Statement (11/11)
+- [ ] Oral Presentation and Recorded Video (11/18)
+- [ ] Design Report, Design Notebook, and Assessments (12/2)
+
+**CS 5002 · Spring 2027 (Build & Deliver)**
+
+- [ ] Implementation of All Four Components
+- [ ] Integration and Testing
+- [ ] CEAS Expo (4/13/2027)
