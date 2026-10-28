@@ -82,3 +82,7 @@ Users upload an image, an AI service turns it into a 3D model, and the model is 
 | [D1 – Detailed Design, Part 1](Design_Diagrams/D1_Detailed_Design.pdf) | Data model, algorithms, API, technology choices |
 | [D2 – Detailed Design, Part 2](Design_Diagrams/D2_Detailed_Design.pdf) | Remaining components, edge cases, traceability |
 | [Peer Review Notes](Design_Diagrams/Peer_Review_Notes.md) | Peer design review feedback and action items |
+| [Task List](Tasklist.md) | 20 implementation tasks (T1–T20), each with one owner |
+| [Milestones, Timeline, and Effort Matrix](Planning/) | Schedule through the CEAS Expo, effort per member, WBS, and risk register |
+| [Requirements Document](Requirements_Document.md) | Functional and non-functional requirements, MoSCoW priorities, constraints |
+| [Technical Specification](Technical_Specification.md) | Interfaces, technology stack, and traceability matrix |
