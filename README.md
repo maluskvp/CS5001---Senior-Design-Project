@@ -64,12 +64,13 @@ Every component now has a data model, defined behavior, an interface with error 
 ├── Requirements_Document.md   Functional and non-functional requirements, MoSCoW, constraints
 ├── Technical_Specification.md Interfaces, technology stack, traceability matrix
 ├── bios/                      Team member professional bios
-├── Planning/                  Milestones, timeline, effort matrix, WBS, and risk register
+├── Planning/
+│   └── Milestones_Timeline_and_Effort_Matrix.pdf   Milestones, timeline, effort matrix, WBS, risk register
 └── Design_Diagrams/
     ├── D0_High_Level_Design.pdf    Components, interfaces, data flow, architecture patterns
     ├── D1_Detailed_Design.pdf      Data model, core algorithms, build vs. reuse, API, tech choices
     ├── D2_Detailed_Design.pdf      Remaining components, edge cases, traceability, rationale
-    └── Peer_Review_Notes.md        Peer design review feedback and action items
+    └── Peer_Review_Notes.md        Feedback from two reviewing teams, with action items
 ```
 
 ### Design documents
@@ -79,7 +80,7 @@ Every component now has a data model, defined behavior, an interface with error 
 | [D0 – High-Level Design](Design_Diagrams/D0_High_Level_Design.pdf) | 5 | ✅ Submitted |
 | [D1 – Detailed Design, Part 1](Design_Diagrams/D1_Detailed_Design.pdf) | 6 | ✅ Submitted |
 | [D2 – Detailed Design, Part 2](Design_Diagrams/D2_Detailed_Design.pdf) | 7 | ✅ Submitted |
-| [Peer Design Review Notes](Design_Diagrams/Peer_Review_Notes.md) | 7 | ✅ Submitted |
+| [Peer Design Review Notes](Design_Diagrams/Peer_Review_Notes.md) | 7 | ✅ Submitted; second team's review added Week 9 |
 
 Together with the user stories, D0–D2 make up the Assignment #4 design package. The design phase is now closed, and each component has been turned into tasks in the [project plan](#project-plan).
 
@@ -88,15 +89,15 @@ Together with the user stories, D0–D2 make up the Assignment #4 design package
 | Document | Week | Status |
 |---|---|---|
 | [Task List](Tasklist.md) | 8 | ✅ Submitted |
-| [Milestones, Timeline, and Effort Matrix](Planning/) | 8 | ✅ Submitted |
-| [Requirements Document](Requirements_Document.md) | 9 | 🛠 In progress |
-| [Technical Specification](Technical_Specification.md) | 9 | 🛠 In progress |
+| [Milestones, Timeline, and Effort Matrix](Planning/Milestones_Timeline_and_Effort_Matrix.pdf) | 8 | ✅ Submitted |
+| [Requirements Document](Requirements_Document.md) | 9 | ✅ Submitted |
+| [Technical Specification](Technical_Specification.md) | 9 | ✅ Submitted |
 
 ---
 
 ## Project plan
 
-Each member owns five tasks for their component. The full schedule, effort matrix, and risk register are in [`Planning/`](Planning/).
+Each member owns five tasks for their component. The full schedule, effort matrix, and risk register are in the [planning document](Planning/Milestones_Timeline_and_Effort_Matrix.pdf).
 
 | Tasks | Owner | Component | Implementation window |
 |---|---|---|---|
@@ -117,29 +118,44 @@ Each member owns five tasks for their component. The full schedule, effort matri
 
 ---
 
+## Requirements at a glance
+
+The [Requirements Document](Requirements_Document.md) defines **11 functional requirements** (REQ-01 to REQ-11), **7 non-functional requirements** (NFR-01 to NFR-07), and **3 constraints** (CON-01 to CON-03). The [Technical Specification](Technical_Specification.md) traces each one to a D0–D2 design element.
+
+| Must have | Won't have (this release) |
+|---|---|
+| Accounts with private, saved models | Prompt-based model generation |
+| Upload an image and get a 3D model | Immersive avatar walkthrough |
+| Switch between saved models | Sharing models between users |
+| Rotate, zoom, pan, and show or hide layers | |
+| A model of up to 50 MB shown within 15 seconds | |
+
+---
+
 ## Tech stack
 
-Chosen and justified in D1.
+Chosen and justified in D1 and the [Technical Specification](Technical_Specification.md).
 
 | Layer | Choice |
 |---|---|
 | Front end | React with Ant Design (upload UI) |
-| 3D rendering | WebGL in the browser (client-side) |
+| 3D rendering | WebGL in the browser (client-side), library chosen in task T16 |
 | Model format | GLB (binary glTF) |
 | Database | PostgreSQL (users, models, layers, generation jobs) |
 | File storage | GLB files stored separately; the database keeps their URLs |
 | Authentication | Hashed passwords and session tokens |
-| 3D generation | Hosted AI image-to-3D API |
+| 3D generation | Hosted AI image-to-3D API, chosen in task T1 |
 
 ---
 
 ## Open questions
 
-Carried forward from D2 and the peer review:
+Carried forward from D2, the peer reviews, and the Requirements Document:
 
 - How a single uploaded image produces the separate layers the viewer displays.
 - Which AI image-to-3D service to use, and a backup plan if its results are poor (to be decided in task T1, by 1/13/2027).
-- Prompt-based model generation (out of scope for now).
+- Whether the system will handle volumetric files (such as .nrrd or .nii.gz) as well as GLB, and how volumetric models would be generated (Q-02 to Q-04).
+- Whether users can import an existing GLB file directly (REQ-07, not yet designed).
 
 ---
 
@@ -155,7 +171,7 @@ Carried forward from D2 and the peer review:
 - [x] D1 – Detailed Design, Part 1
 - [x] D2 – Detailed Design, Part 2, and Peer Design Review
 - [x] Task List, Milestones, Timeline, and Effort Matrix
-- [ ] Requirements Document and Technical Specification (10/30)
+- [x] Requirements Document and Technical Specification
 - [ ] Test and Validation Plan (11/4)
 - [ ] Ethics and Responsible-Use Statement (11/11)
 - [ ] Oral Presentation and Recorded Video (11/18)
