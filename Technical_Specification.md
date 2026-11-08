@@ -106,27 +106,20 @@ Each component boundary below lists its inputs, outputs, format, protocol, and e
 
 ---
 
-### Boundary: _Authentication -> 3D Model Switcher_
+### Boundary: _Login / Sign-up → 3D Model Switcher_
 
 | | |
 |---|---|
 | **Inputs** | Session result: `sessionToken` (string) and `user: {userId: int, firstName: string, lastName: string}` |
-| **Outputs** | One page of the user's models (5 per page), newest first, each with its layers |
-| **Format** | JSON |
-| **Protocol** | HTTPS GET to `/api/v1/authenticate` |
-| **Error Behavior** | Invalid or expired token returns 401 and the user is sent back to login. A model that doesn't belong to the user returns 404, the same as a missing model (EC-S-05). If the list can't be loaded, the Switcher shows an error banner with Retry (EC-S-06). |
+| **Outputs** | The main screen (3D Model Switcher with the 3D Model Viewer) is shown for the logged-in user, or the user is sent back to login |
+| **Format** | JSON session result; the token is then sent as an HTTP Bearer header on every Switcher, upload, and model request |
+| **Protocol** | In-browser navigation to the main screen after a successful HTTPS POST to `/api/v1/authenticate` |
+| **Error Behavior** | When the main screen loads, the Switcher checks the token. A missing, invalid, or expired token returns 401 and the user is sent back to login, then returned to the main screen after logging in again (EC-L-03). |
 
 ```json
 {
-  "modelId": 2,
-  "name": "Model Example",
-  "glbUrl": "/api/v1/models/model_2",
-  "vertices": 45218,
-  "triangles": 87342,
-  "layers": [
-    { "layerId": 101, "name": "Model Example 1", "visible": true },
-    { "layerId": 102, "name": "Model Example 2", "visible": true }
-  ]
+  "sessionToken": "eyJhbGciOi...",
+  "user": { "userId": 12, "firstName": "Test", "lastName": "Example" }
 }
 ```
 

@@ -119,15 +119,15 @@ _Defining every Domain Term and Role Name_
 
 ## 📏 Non-Functional Requirements
 
-| Requirement | ID : NFR - ## | Statement | MoSCoW Priority | Source Story | Verification Method |
-| :--- | :--- | :--- | :---: | ---: | :---: |
-| | NFR-01 | The system shall list a user's saved models, 5 per page, within 2 seconds for a user with up to 500 saved models | Should Have | US-N-06 | Test |
-| | NFR-02 | The system shall keep the 3D Model Switcher and 3D Model Viewer usable while a generation job runs, and show the new model in the list within 5 seconds of the job finishing | Should Have | US-N-07 | Test |
-| | NFR-03 | The system shall store passwords only as salted hashes, reject any model or upload request without a valid session token (401), and lock an account for 15 minutes after 5 failed logins within 15 minutes | Must Have | US-N-08 | Test |
-| | NFR-04 | The system shall display a selected model of up to 50 MB within 15 seconds on a typical home or campus connection | Must Have | US-N-07 | Test |
-| | NFR-05 | The system shall render a displayed model of up to 500,000 triangles at 30 frames per second or more on a mid-range laptop in Chrome, Firefox, and Safari | Should Have | US-N-04 | Test |
-| | NFR-06 | The system shall let a first-time user show or hide a layer within 30 seconds, with at least 5 of 6 test users succeeding on the first try | Should Have | US-N-04 | Demonstration |
-| | NFR-07 | The system shall never leave a blank canvas: every failed model load shows an error message within 15 seconds, and a lost WebGL context is recovered automatically once | Must Have | US-N-04 | Test |
+| ID : NFR - ## | Statement | MoSCoW Priority | Source Story | Verification Method |
+| :--- | :--- | :---: | ---: | :---: |
+| NFR-01 | The system shall list a user's saved models, 5 per page, within 2 seconds for a user with up to 500 saved models | Should Have | US-N-06 | Test |
+| NFR-02 | The system shall keep the 3D Model Switcher and 3D Model Viewer usable while a generation job runs, and show the new model in the list within 5 seconds of the job finishing | Should Have | US-N-07 | Test |
+| NFR-03 | The system shall store passwords only as salted hashes, reject any model or upload request without a valid session token (401), and lock an account for 15 minutes after 5 failed logins within 15 minutes | Must Have | US-N-08 | Test |
+| NFR-04 | The system shall display a selected model of up to 50 MB within 15 seconds on a typical home or campus connection | Must Have | US-N-07 | Test |
+| NFR-05 | The system shall render a displayed model of up to 500,000 triangles at 30 frames per second or more on a mid-range laptop in Chrome, Firefox, and Safari | Should Have | US-N-04 | Test |
+| NFR-06 | The system shall let a first-time user show or hide a layer within 30 seconds, with at least 5 of 6 test users succeeding on the first try | Should Have | US-N-04 | Demonstration |
+| NFR-07 | The system shall never leave a blank canvas: every failed model load shows an error message within 15 seconds, and a lost WebGL context is recovered automatically once | Must Have | US-N-04 | Test |
 
 
 ## 📌 MoSCoW Summary
