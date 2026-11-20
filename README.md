@@ -48,7 +48,7 @@ flowchart LR
 
 Architecture: **client-server** for login, storage, and the switcher; a **pipeline** for image → AI → validated GLB; and a **layered**, client-side design for the viewer. The reasoning is in the design documents below.
 
-Every component now has a data model, defined behavior, an interface with error codes, and documented edge cases (D2).
+Every component has a data model, defined behavior, an interface with error codes, and documented edge cases (D2). The team is also exploring **Gaussian splatting** as the viewer's model format; see [Open questions](#open-questions).
 
 ---
 
@@ -63,6 +63,9 @@ Every component now has a data model, defined behavior, an interface with error 
 ├── Tasklist.md                20 implementation tasks (T1–T20), each with one owner
 ├── Requirements_Document.md   Functional and non-functional requirements, MoSCoW, constraints
 ├── Technical_Specification.md Interfaces, technology stack, traceability matrix
+├── Test_Plan.md               Verification and validation strategy, 99 test cases, pass/fail criteria
+├── Ethics_Statement.md        Privacy, security, licensing, and responsible AI use
+├── LICENSE.txt                MIT License
 ├── bios/                      Team member professional bios
 ├── Planning/
 │   └── Milestones_Timeline_and_Effort_Matrix.pdf   Milestones, timeline, effort matrix, WBS, risk register
@@ -71,6 +74,10 @@ Every component now has a data model, defined behavior, an interface with error 
     ├── D1_Detailed_Design.pdf      Data model, core algorithms, build vs. reuse, API, tech choices
     ├── D2_Detailed_Design.pdf      Remaining components, edge cases, traceability, rationale
     └── Peer_Review_Notes.md        Feedback from two reviewing teams, with action items
+└── Presentation/
+    ├── WebBasedModelVisualizer_Presentation_Final.pptx / .pdf   Fall Design Presentation deck
+    ├── Advisor_Feedback.md                      Advisor review of the draft deck
+    └── Run_Sheet.md                             Speakers, timing, anticipated questions, rehearsals, peer reviews
 ```
 
 ### Design documents
@@ -92,6 +99,17 @@ Together with the user stories, D0–D2 make up the Assignment #4 design package
 | [Milestones, Timeline, and Effort Matrix](Planning/Milestones_Timeline_and_Effort_Matrix.pdf) | 8 | ✅ Submitted |
 | [Requirements Document](Requirements_Document.md) | 9 | ✅ Submitted |
 | [Technical Specification](Technical_Specification.md) | 9 | ✅ Submitted |
+| [Test and Validation Plan](Test_Plan.md) | 10 | ✅ Submitted |
+| [Ethics and Responsible-Use Statement](Ethics_Statement.md) | 11 | ✅ Submitted |
+
+### Presentation
+
+| Document | Week | Status |
+|---|---|---|
+| [Presentation Deck](Presentation/WebBasedModelVisualizer_Presentation_Final.pdf) ([PPTX](Presentation/WebBasedModelVisualizer_Presentation_Final.pptx)) | 12–13 | ✅ Draft Reviewed; Final Completed |
+| [Advisor Feedback](Presentation/Advisor_Feedback.md) | 12 | ✅ Submitted |
+| [Run Sheet](Presentation/Run_Sheet.md) | 13 | ✅ Submitted |
+| Recorded Video | 13 | ✅ Submitted |
 
 ---
 
@@ -132,6 +150,20 @@ The [Requirements Document](Requirements_Document.md) defines **11 functional re
 
 ---
 
+## Testing at a glance
+
+The [Test and Validation Plan](Test_Plan.md) has **99 test cases**, each tied to a requirement, with measurable pass and fail thresholds and at least three cases per must-have requirement.
+
+| Component | Owner | Test cases |
+|---|---|---|
+| Login / Sign-up | Veronica Malusky | TC-001 – TC-019 |
+| Image Upload | Abby Kraft | TC-020 – TC-039 |
+| 3D Model Switcher | Jake Martin | TC-040 – TC-059 |
+| 3D Model Viewer | Sophia Munoz | TC-060 – TC-088 |
+| System and acceptance | Team | TC-090 onward |
+
+---
+
 ## Tech stack
 
 Chosen and justified in D1 and the [Technical Specification](Technical_Specification.md).
@@ -139,8 +171,9 @@ Chosen and justified in D1 and the [Technical Specification](Technical_Specifica
 | Layer | Choice |
 |---|---|
 | Front end | React with Ant Design (upload UI) |
-| 3D rendering | WebGL in the browser (client-side), library chosen in task T16 |
+| 3D rendering | WebGL in the browser (client-side); library chosen in task T16, with three.js the leading candidate |
 | Model format | GLB (binary glTF) |
+| Back end | C# / ASP.NET Core REST API (`/api/v1/...`) |
 | Database | PostgreSQL (users, models, layers, generation jobs) |
 | File storage | GLB files stored separately; the database keeps their URLs |
 | Authentication | Hashed passwords and session tokens |
@@ -156,6 +189,7 @@ Carried forward from D2, the peer reviews, and the Requirements Document:
 - Which AI image-to-3D service to use, and a backup plan if its results are poor (to be decided in task T1, by 1/13/2027).
 - Whether the system will handle volumetric files (such as .nrrd or .nii.gz) as well as GLB, and how volumetric models would be generated (Q-02 to Q-04).
 - Whether users can import an existing GLB file directly (REQ-07, not yet designed).
+- Whether to switch the viewer to **Gaussian splats** (realistic, output directly by some image-to-3D models, and renderable in three.js through Spark) only, or splats with a mesh fallback. Splitting a splat model into layers (for example with SAGA or Gaussian Grouping) is still being tested.
 
 ---
 
@@ -172,9 +206,10 @@ Carried forward from D2, the peer reviews, and the Requirements Document:
 - [x] D2 – Detailed Design, Part 2, and Peer Design Review
 - [x] Task List, Milestones, Timeline, and Effort Matrix
 - [x] Requirements Document and Technical Specification
-- [ ] Test and Validation Plan (11/4)
-- [ ] Ethics and Responsible-Use Statement (11/11)
-- [ ] Oral Presentation and Recorded Video (11/18)
+- [x] Test and Validation Plan
+- [x] Ethics and Responsible-Use Statement
+- [x] Presentation Draft and Documented Advisor Feedback
+- [x] Oral Presentation, Recorded Video, and Peer Reviews
 - [ ] Design Report, Design Notebook, and Assessments (12/2)
 
 **CS 5002 · Spring 2027 (Build & Deliver)**
@@ -182,3 +217,9 @@ Carried forward from D2, the peer reviews, and the Requirements Document:
 - [ ] Implementation of All Four Components
 - [ ] Integration and Testing
 - [ ] CEAS Expo (4/13/2027)
+
+---
+
+## License
+
+Released under the [MIT License](LICENSE.txt). Copyright (c) 2026 Abby Kraft, Veronica Malusky, Sophia Munoz, Jake Martin.

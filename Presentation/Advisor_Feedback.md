@@ -21,7 +21,8 @@ Last updated 2026-11-19
 | **Duration** | 34 minutes |
 | **Format** | Microsoft Teams |
 | **Attendees** | Professor Ming Tang (advisor), Abby Kraft, Veronica Malusky, Jake Martin, Sophia Munoz <!-- remove anyone who wasn't there --> |
-| **Deck reviewed** | Draft deck as of 2026-11-10 (`Presentation\Senior Design Presentation Assignment 12 and 13.pptx`, commit ``) |
+| **Deck reviewed** | Draft deck as of 2026-11-10 (`Presentation\WebBasedModelVisualizer_Presentation_Final.pptx`) |
+
 
 ---
 
