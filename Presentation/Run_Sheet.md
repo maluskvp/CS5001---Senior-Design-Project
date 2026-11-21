@@ -72,3 +72,10 @@ Last updated 2026-11-19
 
 ## Peer Reviews
 
+Our team reviewed three other teams' recorded presentations, chosen from teams listed close to ours in the Senior Design Team Table.
+ 
+| Team / project | Reviewer | Review |
+|---|---|---|
+| TradeIO | Team | Even at a very quick glance, it is clear the slides are highly polished and very modern! That said, your video does not appear to be working right now; it is just 5 seconds of white. It is overall a very interesting idea, and I think it would be a great tool to get people started in the world of stock trading. I also like that you say directly that this tool will not let people actually trade, as it draws a clear line between what it can and cannot do. I do think it is very important to tell users that stock trading involves risk and that AI can make mistakes. Overall great work, and I hope to see it at Expo! |
+| Data-Day | Team | This is definitely an interesting idea! I personally have not spent much time working with this kind of thing, but making things more accessible is always a worthwhile endeavor. I also think you were clear overall in your video, which is always a plus. For Expo, you might want a plan in case the Wi-Fi is bad. When Expo has been on campus in the past, UC_Secure has been a little sketchy, and when it has been off campus, Wi-Fi sometimes is not provided. It might be best to connect to a hotspot so you know you will have a solid connection. |
+| SkillForge | Team | This is absolutely an interesting idea! One thing I am interested to see is how this training compares to more traditional robot training methods. I can see the value in how quickly it allows for rapid development of robot movement models. I also think this is a great academic project with plenty of CS merit! |
